@@ -22,6 +22,7 @@ Grey dark 3: #999
   --color-grey-dark-1: #333;
   --color-grey-dark-2: #777;
   --color-grey-dark-3: #999;
+  --color-grey-dark-4: #495057;
   --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3); }
 
 * {
@@ -97,9 +98,9 @@ body {
       outline: none;
       width: 100%;
       background-color: var(--color-grey-light-3); }
-    .search__input::-webkit-input-placeholder {
+    .search__input::placeholder {
       font-weight: 100;
-      color: var(--color-grey-light-3); }
+      color: var(--color-grey-light-4); }
   .search__input:focus + .search__button {
     background-color: var(--color-grey-light-3); }
   .search__button {
