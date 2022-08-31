@@ -23,6 +23,8 @@
   justify-content: space-between;
   align-items: center;
 
+  position: relative;
+
   @media only screen and (max-width: $bp-smallest) {
     flex-wrap: wrap;
     align-content: space-around;

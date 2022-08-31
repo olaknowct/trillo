@@ -32,21 +32,21 @@
         </form>
 
         <nav class="user-nav">
-          <div class="user-nav__icon-box">
+          <div class="user-nav__icon-box bookmark">
             <svg class="user-nav__icon">
               <use xlink:href="img/sprite.svg#icon-bookmark"></use>
             </svg>
             <span class="user-nav__notification">7</span>
           </div>
 
-          <div class="user-nav__icon-box">
+          <div class="user-nav__icon-box messages">
             <svg class="user-nav__icon">
               <use xlink:href="img/sprite.svg#icon-chat"></use>
             </svg>
             <span class="user-nav__notification">13</span>
           </div>
 
-          <div class="user-nav__user">
+          <div class="user-nav__user cur-user">
             <img
               src="img/max.jpg"
               alt="User Photo"
@@ -55,6 +55,59 @@
             <span class="user-nav__user-name">max</span>
           </div>
         </nav>
+
+        <div class="modal-notification">
+          <div class="modal-notification__box bookmark">
+            <p class="modal-notification__heading">Notifications</p>
+
+            <div class="modal-notification__row">
+              <img
+                class="modal-notification__user"
+                src="./img/max.jpg"
+                alt="Jonas"
+              />
+              <p class="modal-notification__info">
+                Jonas Sent you an invitation
+              </p>
+            </div>
+
+            <div class="modal-notification__row">
+              <img
+                class="modal-notification__user"
+                src="./img/user.jpg"
+                alt="Jonas"
+              />
+              <p class="modal-notification__info">
+                Jonas Sent you an invitation
+              </p>
+            </div>
+          </div>
+          <div class="modal-notification__box messages">
+            <p class="modal-notification__heading">Messages</p>
+
+            <div class="modal-notification__row">
+              <img
+                class="modal-notification__user"
+                src="./img/user-2.jpg"
+                alt="Jonas"
+              />
+              <p class="modal-notification__info">
+                Jonas Sent you an invitation
+              </p>
+            </div>
+
+            <div class="modal-notification__row">
+              <img
+                class="modal-notification__user"
+                src="./img/user-3.jpg"
+                alt="Jonas"
+              />
+              <p class="modal-notification__info">
+                Jonas Sent you an invitation
+              </p>
+            </div>
+          </div>
+        </div>
       </header>
 
       <div class="content">
@@ -259,4 +312,5 @@
       </div>
     </div>
   </body>
+  <script src="./index.js"></script>
 </html>

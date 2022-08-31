@@ -564,3 +564,55 @@
     animation: pulsate 1s infinite;
   }
 }
+
+// modal
+.modal-notification {
+  position: absolute;
+  top: 7rem;
+  left: 89rem;
+  box-shadow: var(--shadow-light);
+  height: 50rem;
+  z-index: 11;
+  width: 29rem;
+  border-radius: 15px;
+  background: #fff;
+  overflow: hidden;
+
+  display: none;
+
+  &__box {
+    display: none;
+    flex-direction: column;
+  }
+
+  &__user {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+  }
+
+  &__info {
+    font-size: 1.2rem;
+  }
+
+  &__row {
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    &:hover {
+      background-color: antiquewhite;
+    }
+  }
+
+  &__heading {
+    padding: 2rem;
+    font-size: 2rem;
+    border-bottom: 1px solid var(--color-grey-light-3);
+  }
+}
+
+.active {
+  display: block;
+}
