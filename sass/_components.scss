@@ -72,6 +72,13 @@
   display: flex;
   align-items: center;
 
+  &__menu {
+    display: none;
+  }
+
+  &__icon-box:hover &__menu {
+    display: block;
+  }
   & > * {
     padding: 0 2rem;
     cursor: pointer;
@@ -86,6 +93,7 @@
   &__icon-box {
     position: relative;
   }
+
   &__icon {
     height: 2.25rem;
     width: 2.25rem;
@@ -565,20 +573,17 @@
   }
 }
 
-// modal
-.modal-notification {
+// Menu modal
+.menu {
   position: absolute;
-  top: 7rem;
-  left: 89rem;
+  top: 95%;
+  left: -7rem;
   box-shadow: var(--shadow-light);
-  height: 50rem;
   z-index: 11;
-  width: 29rem;
-  border-radius: 15px;
+  width: 30rem;
+  border-radius: 10px;
   background: #fff;
   overflow: hidden;
-
-  display: none;
 
   &__box {
     display: none;
@@ -613,6 +618,66 @@
   }
 }
 
-.active {
-  display: block;
+// Notification modal
+.notification-menu {
+  position: absolute;
+  top: 95%;
+  left: -13.2rem;
+  box-shadow: var(--shadow-light);
+  z-index: 11;
+  width: 30rem;
+  border-radius: 10px;
+  background: #fff;
+
+  &__svg {
+    height: 1.8rem;
+    width: 1.8rem;
+
+    &--icon {
+      stroke: #ff6b6b;
+    }
+  }
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__user {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+  }
+
+  &__message {
+    font-size: 1.2rem;
+    color: var(--color-grey-light-4);
+  }
+
+  &__name {
+    font-size: 1.4rem;
+  }
+
+  &__row {
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    &:hover {
+      background-color: antiquewhite;
+    }
+
+    &--right {
+      display: flex;
+      flex-direction: column;
+
+      width: 100%;
+    }
+  }
+
+  &__heading {
+    padding: 2rem;
+    font-size: 2rem;
+    border-bottom: 1px solid var(--color-grey-light-3);
+  }
 }
