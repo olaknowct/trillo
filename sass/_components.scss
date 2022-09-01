@@ -230,6 +230,36 @@
   &__photo {
     width: 100%;
     display: block;
+    transition: all 0.5s;
+    transform: scale(1);
+  }
+
+  &__item {
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+  }
+
+  &__caption {
+    background-color: #eb2f646b;
+    padding: 1.5rem;
+    position: absolute;
+    // top: 70%;
+    top: 100%;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    transition: all 0.5s;
+  }
+
+  &__item:hover &__photo {
+    transform: scale(1.1);
+  }
+
+  &__item:hover &__caption {
+    top: 70%;
   }
 }
 
